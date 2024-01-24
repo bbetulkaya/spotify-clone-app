@@ -1,13 +1,21 @@
+import Sidebar from "@/components/Sidebar";
 import Head from "next/head";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black h-screen overflow-hidden">
       <Head>
         <title>Spotify Clone</title>
       </Head>
 
-      <h1>This is a Dope spotify clone!</h1>
+      <main>
+        <Sidebar />
+      {/* Center */}
+      </main>
+
+      <div>
+        {/* Player */}
+      </div>
     </div>
   );
 }
