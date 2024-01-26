@@ -21,7 +21,6 @@ export default async function middleware(req) {
 
 
 export const config = {
-  matcher: [
-    '/((?!_next|api/auth).*)(.+)'
-  ],
+  // Matcher ignoring `/_next/` and `/api/`
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)']
 }
